@@ -7,14 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <nb-layout>
+    <nb-layout-column>
+      <nb-card>
+        <nb-card-header>Nebula</nb-card-header>
+        <nb-card-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-card-body>
+        <nb-card-footer>By Wikipedia</nb-card-footer>
+      </nb-card>
+      
+    </nb-layout-column>
+  </nb-layout>
 </ion-content>
