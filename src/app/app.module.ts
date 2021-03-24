@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbSidebarService, NbMenuService } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbSidebarService, NbMenuService, NbMenuModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +19,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     IonicModule.forRoot(),
     AppRoutingModule,
     NbThemeModule.forRoot({ name: 'default' }),
+    NbMenuModule.forRoot(),
     NbLayoutModule,
     NbEvaIconsModule
   ],

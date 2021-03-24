@@ -8,6 +8,7 @@ import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 import { NbLayoutModule } from '@nebular/theme';
+import { HeaderModule } from '../@shared/components/header/header.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { NbLayoutModule } from '@nebular/theme';
     IonicModule,
     TabsPageRoutingModule,
     NbLayoutModule,
+    HeaderModule
   ],
   declarations: [TabsPage]
 })

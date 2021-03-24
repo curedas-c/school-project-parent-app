@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage implements OnInit {
 
-  studentsNameList = [{ title: 'Profile' }, { title: 'Log out' }];
   constructor() { }
 
   ngOnInit() {
