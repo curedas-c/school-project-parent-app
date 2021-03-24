@@ -1,0 +1,12 @@
+ion-content {
+    --padding-top: 8vh;
+}
+
+ion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem .2rem;
+    border-bottom: none;
+    box-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1);
+}
