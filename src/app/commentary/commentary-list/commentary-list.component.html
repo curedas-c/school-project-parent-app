@@ -1,0 +1,17 @@
+<ion-content>
+  <nb-list>
+    <nb-list-item *ngFor="let commentary of commentaryList">
+      <nb-card [accent]="commentary.colorType">
+        <nb-card-header>
+          <nb-user size="medium" [name]="commentary.sender.name" [title]="commentary.sender.role">
+          </nb-user>
+          <button nbButton outline [status]="commentary.statusColor" size="medium" shape="round">Voir <nb-icon icon="arrow-right-outline"></nb-icon></button>
+          <nb-badge [text]="commentary.date" [status]="commentary.statusColor" position="top right"></nb-badge>
+        </nb-card-header>
+        <nb-card-body>
+          {{ commentary.message }}
+        </nb-card-body>
+      </nb-card>
+    </nb-list-item>
+  </nb-list>
+</ion-content>
