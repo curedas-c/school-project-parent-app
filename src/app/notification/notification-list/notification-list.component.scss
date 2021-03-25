@@ -1,5 +1,6 @@
 nb-card {
     margin-bottom: .8rem;
+    width: 100%;
 }
 
 nb-card-footer {
@@ -28,17 +29,4 @@ ion-img {
 
 ion-icon {
     vertical-align: text-top!important;
-}
-
-@media (min-width: 768px) {
-    nb-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex: 1 1;
-        align-items: flex-start;
-    }
-    nb-list-item {
-        width: 45%;
-    }
 }

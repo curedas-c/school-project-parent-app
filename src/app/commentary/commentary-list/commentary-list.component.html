@@ -1,7 +1,7 @@
 <ion-content>
   <nb-list>
     <nb-list-item *ngFor="let commentary of commentaryList">
-      <nb-card [accent]="commentary.colorType">
+      <nb-card [accent]="commentary.statusColor">
         <nb-card-header>
           <nb-user size="medium" [name]="commentary.sender.name" [title]="commentary.sender.role">
           </nb-user>
