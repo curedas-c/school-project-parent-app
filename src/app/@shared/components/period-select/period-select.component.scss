@@ -1,0 +1,10 @@
+:host {
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    &>div {
+        width: fit-content;
+        margin-left: -3rem;
+    } 
+}

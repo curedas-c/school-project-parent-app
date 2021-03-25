@@ -6,15 +6,20 @@ import { IonicModule } from '@ionic/angular';
 
 import { NotePageRoutingModule } from './note-routing.module';
 
-import { NotePage } from './note.page';
+import { AverageListComponent } from './average-list/average-list.component';
+import { NbIconModule, NbListModule } from '@nebular/theme';
+import { PeriodSelectModule } from '../@shared/components/period-select/period-select.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    NbListModule,
+    NbIconModule,
+    PeriodSelectModule,
     NotePageRoutingModule
   ],
-  declarations: [NotePage]
+  declarations: [AverageListComponent]
 })
 export class NotePageModule {}
