@@ -6,15 +6,19 @@ import { IonicModule } from '@ionic/angular';
 
 import { NotificationPageRoutingModule } from './notification-routing.module';
 
-import { NotificationPage } from './notification.page';
+import { NotificationListComponent } from './notification-list/notification-list.component';
+import { NbButtonModule, NbCardModule, NbListModule } from '@nebular/theme';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    NbListModule,
+    NbCardModule,
+    NbButtonModule,
     NotificationPageRoutingModule
   ],
-  declarations: [NotificationPage]
+  declarations: [NotificationListComponent]
 })
 export class NotificationPageModule {}

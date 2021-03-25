@@ -1,0 +1,44 @@
+nb-card {
+    margin-bottom: .8rem;
+}
+
+nb-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+        justify-self: end;
+    }
+}
+
+nb-card-header {
+    padding: 0!important;
+}
+
+nb-list-item {
+    border: none!important;
+    padding-bottom: 0!important;
+}
+
+ion-img {
+    overflow: hidden;
+    object-fit: cover!important;
+    height: 110px!important;
+}
+
+ion-icon {
+    vertical-align: text-top!important;
+}
+
+@media (min-width: 768px) {
+    nb-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex: 1 1;
+        align-items: flex-start;
+    }
+    nb-list-item {
+        width: 45%;
+    }
+}

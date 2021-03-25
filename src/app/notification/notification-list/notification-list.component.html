@@ -1,0 +1,22 @@
+<ion-content>
+  <nb-list>
+    <nb-list-item *ngFor="let event of eventList">
+      <nb-card>
+        <nb-card-header *ngIf="event?.coverImage">
+          <ion-img [src]="event?.coverImage"></ion-img>
+        </nb-card-header>
+        <nb-card-body>
+          <ion-card-title>{{ event?.title }}</ion-card-title>
+          <ion-card-subtitle>{{ event?.subtitle }}</ion-card-subtitle>
+        </nb-card-body>
+        <nb-card-footer>
+          <ion-card-subtitle *ngIf="event?.date" [color]="event?.statusColor">
+            <ion-icon name="timer-outline"></ion-icon>
+            {{ event?.date }}
+          </ion-card-subtitle>
+          <button nbButton outline size="small" status="primary">Détails</button>
+        </nb-card-footer>
+      </nb-card>
+    </nb-list-item>
+  </nb-list>
+</ion-content>
