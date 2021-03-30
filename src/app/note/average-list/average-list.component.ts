@@ -11,7 +11,7 @@ export class AverageListComponent implements OnInit {
     {
       subjectName: 'Français',
       average: 13,
-      statusColor: 'success'
+      statusColor: 'primary'
     },
     {
       subjectName: 'Anglais',
@@ -31,7 +31,7 @@ export class AverageListComponent implements OnInit {
     {
       subjectName: 'Physique-Chimie',
       average: 12,
-      statusColor: 'warning'
+      statusColor: 'primary'
     },
     {
       subjectName: 'SVT',

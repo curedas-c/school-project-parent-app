@@ -4,7 +4,7 @@
       <nb-list-item *ngFor="let average of averageList">
         <article>
           <div><h6 class="font-weight-normal">{{ average?.subjectName }}</h6></div>
-          <div (click)="showDetails(average)"><h6>{{ average?.average }}/20 <nb-icon icon="arrow-right-outline" [status]="average?.statusColor"></nb-icon></h6></div>
+          <div (click)="showDetails(average)"><h6><ion-text [color]="average?.statusColor">{{ average?.average }}/20 <nb-icon icon="arrow-right-outline"></nb-icon></ion-text></h6></div>
         </article>
       </nb-list-item>
     </nb-list>
