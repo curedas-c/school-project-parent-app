@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-average-list',
@@ -39,9 +40,11 @@ export class AverageListComponent implements OnInit {
       statusColor: 'success'
     },
   ];
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {}
 
-  showDetails(average: any) {}
+  showDetails(average: any) {
+    this.router.navigate(['./details', { averageId: average }], { relativeTo: this.route});
+  }
 }

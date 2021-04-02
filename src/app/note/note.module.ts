@@ -7,8 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { NotePageRoutingModule } from './note-routing.module';
 
 import { AverageListComponent } from './average-list/average-list.component';
-import { NbIconModule, NbListModule } from '@nebular/theme';
+import { AverageDetailsComponent } from './average-details/average-details.component';
+import { NbCardModule, NbIconModule, NbListModule, NbTreeGridModule } from '@nebular/theme';
 import { PeriodSelectModule } from '../@shared/components/period-select/period-select.module';
+import { NoteTableComponent } from './@shared/components/note-table/note-table.component';
 
 @NgModule({
   imports: [
@@ -17,9 +19,11 @@ import { PeriodSelectModule } from '../@shared/components/period-select/period-s
     IonicModule,
     NbListModule,
     NbIconModule,
+    NbCardModule,
+    NbTreeGridModule,
     PeriodSelectModule,
     NotePageRoutingModule
   ],
-  declarations: [AverageListComponent]
+  declarations: [AverageListComponent, AverageDetailsComponent, NoteTableComponent]
 })
 export class NotePageModule {}
